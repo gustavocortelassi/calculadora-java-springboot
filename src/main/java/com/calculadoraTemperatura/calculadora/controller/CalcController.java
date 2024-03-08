@@ -53,7 +53,14 @@ public class CalcController {
                         }
                         break;
                     case "Fahrenheit":
-                        
+                        switch(operator2){
+                            case "Celsius":
+                                result = (campo1 / 1.8) - 32;
+                                break;
+                            case "Kelvin":
+                                result = (campo1 / 1.8) + 459.67;
+                                break;
+                        }
                         break;
                     default:
                         break;
